@@ -10,6 +10,13 @@ module.exports = {
     }
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: 'flspj7ses2tx',
+        accessToken: 'jvPT6MKtRFb0Vlo6nKJHqdpX_gjSnc7zOevJpmkpzDM'
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
