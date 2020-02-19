@@ -1,8 +1,9 @@
+
 const path = require(`path`);
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
-  return new Promise ((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     graphql(`
       {
         allContentfulBlogPost {
@@ -25,7 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
           context: {
             slug: edge.node.slug
           }
-        })
+        });
       })
       resolve();
     })

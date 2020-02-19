@@ -14,7 +14,7 @@ const About = ({ data }) => {
       <p>{`${company} was started by ${name} in 2020.`}</p>
       <p>{`At ${company} we just make blogs!`}</p>
 
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`}}>
+      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
       </div>
       <Link to="/">Home</Link>
@@ -34,5 +34,5 @@ export const query = graphql`
         }
       }
     }
-  }
+}
 `
