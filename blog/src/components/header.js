@@ -4,7 +4,7 @@ import React from "react"
 import styled from 'styled-components'
 
 const Outer = styled.header`
-  background: rebeccapurple;
+  background: ${props => props.theme.header.backgroundColor};
   margin-bottom: 1.45rem
 `
 
@@ -21,7 +21,7 @@ const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
   &:hover {
-    color: yellow;
+    color: purple;
   } 
 `
 
